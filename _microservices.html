@@ -50,7 +50,7 @@
                         <h3>Fragile</h3>
                         <p>Porcelain teacup</p>
                         <p>House of cards</p>
-                        <p>Deep class inheritance structures</p>
+                        <p>Monolith code bases</p>
                         <aside class="notes">
                             Something that is easily damaged by stress and disorder.
                             Fragile things are overly optimized.
@@ -58,6 +58,9 @@
                     </section>
                     <section>
                         <h3>Robust</h3>
+                        <p></p>
+                        <p></p>
+                        <p></p>
                         <aside class="notes">
                             Something that stays the same during volatility.
                         </aside>
@@ -65,17 +68,22 @@
                     <section>
                         <h3>Antifragile</h3>
                         <p>The human body</p>
+                        <p></p>
+                        <p>Microservice architecture</p>
                         <aside class="notes">
                             Something that grows stronger from volatility.
                         </aside>
                     </section>
                 </section>
+                
                 <section data-background="img/atlantis-cockpit.jpg">
                     <p style="font-size: 9pt; position:absolute; right: 0; top:1680%;background-color:rgba(0, 0, 0, 0.7);">
                         https://www.nasa.gov/mission_pages/shuttle/flyout/flyfeature_shuttlecomputers.html
                     </p>
                     <aside class="notes">
-                        Space Shuttle Atlantis, 400 lines of code.
+                        Space Shuttle Atlantis. Flight software facts: 400 lines of code, 1 bug per release, $1000 per line of code.
+                        As close as humanity has come to perfect software. Implicit assumption that enterpise software needs to be this perfect.
+                        Process. Fear. Unable to most fast.  Node.js apps will end up like older code bases (java, c#).
                     </aside>
                 </section>
                 <section data-background="img/gossamer_albatross.jpg">
@@ -84,19 +92,59 @@
                     </p>
                     <aside class="notes">
                         The Gossamer Albatross, a human-powered aircraft built by Dr. Paul B. MacCready's company AeroVironment.
-                        On June 12, 1979, it completed a successful crossing of the English Channel to win a £100,000 prize.
+                        £100,000 prize offered in 1959 for flying under their own power across the English channel. 
+                        In 1979 it completed a successful crossing.
+                        20 years. How? Problem wasn't crossing the channel, but not being able to iterate the design fast enough.
+                        Using aluminium piping and mix and match parts he could iterate faster.
+                        1 year to win prize after system was in place.
+                        Node.js should be this empowering!
                     </aside>
                 </section>
                 <section data-background="img/yak.jpg">
                     <aside class="notes">
-                        Enterprise Software development can feel like shaving a Himilayan Yak.
+                        Node.js development is in danger of ending up like old school Enterpise Software Development 
+                        which can feel like shaving a Himilayan Yak.
+                        You want to do something but you have to do all these other things that end up in having to shave a yak to get anything done.
                     </aside>
                 </section>
                 <section data-background="img/lego.jpg">
                     <aside class="notes">
-                        fun
+                        This is what we want Enterpise software development to be like.
+                        Joyful. Ad for lego 1981.  We became software developers to feel this way.
+                        Composabilty is hard to achieve. We need a component model for dealing with business logic.
+                        Microservices.
                     </aside>
                 </section>
+                <section>
+                    <h3>What is microservice?</h3>
+                    <p>Small independent processes</p>
+                    <p>Communicating via messages</p>
+                    <p>A powerful component model</p>
+                    <aside class="notes">
+                        Deploy independently. Communication could be REST, message bus, anything. 
+                        Composable if you put them together in the right way. 
+                        Why each microservice should believe it's the only one in the world.                        
+                    </aside>
+                </section>
+                <section>
+                    <h3>Why microservices?</h3>
+                    <p>Avoid technial debt</p>
+                    <p>Continous Delivery</p>
+                    <p>Build fast</p>
+                    <aside class="notes">
+                        The should be small. Docker or Kubernetes. Composable.
+                    </aside>
+                </section>
+                <section>
+                    <h3>What are the trade offs?</h3>
+                    <p>Deployment is more complex</p>
+                    <p>Weird programming model</p>
+                    <p>Services have to find each other</p>
+                    <aside class="notes">
+                        No free lunch. Use tools to understand message flows (zipkin). Service discovery.
+                    </aside>
+                </section>
+
                 <section data-background="img/lamp.jpg">
                     <p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 1</span></p>
                     <p class="fragment">idea 2</p>
