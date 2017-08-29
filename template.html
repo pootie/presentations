@@ -7,8 +7,9 @@
 		<title>reveal.js</title>
 
     <link rel="stylesheet" href="css/reveal.css">
-    <link rel="stylesheet" href="css/kobold.css">
-		<link rel="stylesheet" href="css/theme/black.css">
+		<link rel="stylesheet" href="css/kobold-logo.css">
+		<link rel="stylesheet" href="css/theme/kobold-dark.css">
+
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
@@ -29,8 +30,34 @@
 
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section>
+					Slide 1
+					<aside class="notes">
+						This slide has fragments which are also stepped through in the notes window.
+					</aside>					
+				</section>
+				<section>
+					Slide 2
+					<aside class="notes">
+						This slide has fragments which are also stepped through in the notes window.
+					</aside>
+				</section>
+
+                <section data-background="img/lamp.jpg">
+                    <p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 1</span></p>
+                    <p class="fragment">idea 2</p>
+                    <p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 3</span></p>
+                </section> 
+                <section data-background="img/magic.gif">
+                    <h2>How does this happen?</h2>
+                </section>                
+                <section data-background="img/dragon-scroll.jpg">
+                    <h2>Secret Sauce?</h2>
+                </section>                
+                <section data-background="img/questions.jpg">
+                    <h2>Questions?</h2>
+                    <a href="https://wiki.kobold.com.au">http://wiki.kobold.com.au</a>
+                </section>   				
 			</div>
 		</div>
 
@@ -43,13 +70,16 @@
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/tagcloud/tagcloud.js' }
 				]
 			});
 		</script>

@@ -1,0 +1,38 @@
+#kobold {
+    float: right;
+    position: absolute;
+    right: 0;
+  }
+  #kobold a {
+    text-indent: 120%;
+    white-space: nowrap;
+    overflow: hidden;
+    background-image: url('../img/kobold-static.png');
+    background-repeat: no-repeat;
+    display: block;
+    height: 37px;
+    position: relative;
+    width: 147px;
+    z-index: 2;
+  }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (-o-min-device-pixel-ratio: 3/2), (min-resolution: 1.5dppx) {
+    #kobold a {
+      background-image: url('../img/kobold-static-high-res.png');
+      -webkit-background-size: 147px 37px;
+      background-size: 147px 37px;
+    }
+  }
+  #kobold:before {
+    background-color: transparent;
+    content: '';
+    display: block;
+    height: 26px;
+    left: 28px;
+    position: absolute;
+    top: 0;
+    width: 88px;
+    z-index: 1;
+  }
+html[dir='rtl'] #kobold {
+float: left;
+}
