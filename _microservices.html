@@ -33,7 +33,7 @@
 			<div class="slides">
                 <section>
                     <h2>Node.js Microservices</h2>
-                    <p><i class="em em-metal"></i>Rad ideas and concepts<i class="em em-metal"></i></p>
+                    <p class="fragment"><i class="em em-metal"></i>Rad ideas and concepts<i class="em em-metal"></i></p>
                     <aside class="notes">
                         why should we consider a microservice architecture?
                     </aside>
@@ -45,7 +45,7 @@
                 <section>
                     <h4>To infinity and beyond!</h4>
                     <img src="img/microservices-future.jpg" />
-                </section>       
+                </section>
                 <section>
                     <h4>Baby steps</h4>
                     <img src="img/microservices-next.jpg" />
@@ -54,10 +54,10 @@
                     <h2>Ideas from...</h2>
                     <img src="img/tao-microservices.jpg" width="30%" />
                     <aside class="notes">
-                        The tao of microservices by Richard Rodger. 
+                        The tao of microservices by Richard Rodger.
                         https://www.manning.com/books/the-tao-of-microservices
                     </aside>
-                </section>                
+                </section>
 
                 <section>
                     <section>
@@ -93,11 +93,11 @@
                         <p>Cities and economies</p>
                         <p>Ideas and movements</p>
                         <aside class="notes">
-                            Something that grows stronger from volatility.  
+                            Something that grows stronger from volatility.
                         </aside>
                     </section>
                 </section>
-                
+
                 <section data-background="img/atlantis-cockpit.jpg">
                     <p style="font-size: 9pt; position:absolute; right: 0; top:1680%;background-color:rgba(0, 0, 0, 0.7);">
                         https://www.nasa.gov/mission_pages/shuttle/flyout/flyfeature_shuttlecomputers.html
@@ -114,7 +114,7 @@
                     </p>
                     <aside class="notes">
                         The Gossamer Albatross, a human-powered aircraft built by Dr. Paul B. MacCready's company AeroVironment.
-                        £100,000 prize offered in 1959 for flying under their own power across the English channel. 
+                        £100,000 prize offered in 1959 for flying under their own power across the English channel.
                         In 1979 it completed a successful crossing.
                         20 years. How? Problem wasn't crossing the channel, but not being able to iterate the design fast enough.
                         Using aluminium piping and mix and match parts he could iterate faster.
@@ -124,9 +124,10 @@
                 </section>
                 <section data-background="img/yak.jpg">
                     <aside class="notes">
-                        Node.js development is in danger of ending up like old school Enterpise Software Development 
-                        which can feel like shaving a Himilayan Yak.
+                        We've all met this Hymilayan Yak.
+                        Node.js development is in danger of ending up like old school Enterpise Software Development.
                         You want to do something but you have to do all these other things that end up in having to shave a yak to get anything done.
+                        RFC > Change Board Approval > Informal Test > Pre Prod Test > TRR > Formal Test > CIOG > Release Support > Shave Yak.
                     </aside>
                 </section>
                 <section data-background="img/lego.jpg">
@@ -143,9 +144,9 @@
                     <p>Communicating via messages</p>
                     <p>A powerful component model</p>
                     <aside class="notes">
-                        Deploy independently. Communication could be REST, message bus, anything. 
-                        Composable if you put them together in the right way. 
-                        Why each microservice should believe it's the only one in the world.                        
+                        Deploy independently. Communication could be REST, message bus, anything.
+                        Composable if you put them together in the right way.
+                        Why each microservice should believe it's the only one in the world.
                     </aside>
                 </section>
                 <section>
@@ -154,7 +155,7 @@
                     <p>Continous Delivery</p>
                     <p>Build fast</p>
                     <aside class="notes">
-                        The should be small. Docker or Kubernetes. Composable.
+                        They should be small. Deploy with Docker Swarm or Kubernetes. Composable.
                     </aside>
                 </section>
                 <section>
@@ -163,7 +164,8 @@
                     <p>Weird programming model</p>
                     <p>Services have to find each other</p>
                     <aside class="notes">
-                        No free lunch. Use tools to understand message flows (zipkin). Service discovery hard problem than deployment.
+                        No free lunch. Use deployment tooling. Use tools to understand message flows (zipkin). Service discovery hard problem than deployment.
+                        Why bother?
                     </aside>
                 </section>
                 <section>
@@ -178,24 +180,24 @@
                     <h4>Coupling</h4>
                     <img src="img/microservices-component-call2.jpg" />
                     <aside class="notes">
-                        Even if they are microservices using REST, there is a coupling.  
-                        It has to know the network location on the network.
-                        A has to know about B and that's a core weakness.  
-                        Building your entire system this way leads to a distributed monolith.
+                        Even if they are microservices using REST, there is a coupling.
+                        It has to know the network location.
+                        A has to know about B and that's a core weakness.
+                        Building your entire system this way leads to a 'distributed' monolith as opposed to a regular monolith.
                     </aside>
                 </section>
                 <section>
                     <h4>Super Coupling!</h4>
                     <img src="img/classes.gif" />
                     <aside class="notes">
-                        Show huge class heirarchy, generate from TW java?
+                        Making a change in a structure like this requires expert knowledge, technical reviews, change boards and shaving a yak!
                     </aside>
-                </section>                
+                </section>
                 <section>
                     <h4>Un-Coupling?</h4>
                     <img src="img/microservices-component-call3.jpg" />
                     <aside class="notes">
-                        This is the promised land. Each microservice should believe it's the only one.                                               
+                        But wait this is hope! This is the promised land. Each microservice/component should believe it's the only one.
                     </aside>
                 </section>
                 <section>
@@ -203,10 +205,10 @@
                     <img src="img/microservices-component-decouple.jpg" />
                     <aside class="notes">
                         A sends a message without knowing location of B, B recieves messages without knowledge of A.
-                        Now you have decoupling.  You can change A or B independent of each other. 
-                        How do we deal with service discovery?
+                        Now you have decoupling.  You can change A or B independent of each other.
+                        New problem, how do we deal with service discovery?
                     </aside>
-                </section>                  
+                </section>
                 <section>
                     <h3>Service Discovery by...</h3>
                     <p>Configuration files</p>
@@ -216,9 +218,9 @@
                     <p>Message bus</p>
                     <aside class="notes">
                         All of these solutions still preserve the notion of identity.
-                        What can we do? 
+                        What can we do?
                     </aside>
-                </section>                              
+                </section>
 
                 <section data-background="img/lamp.jpg">
                     <p><span style="background-color:rgba(0, 0, 0, 0.7);">What if service discovery didn't require identity?</span></p>
@@ -236,10 +238,10 @@
                     </ul>
                     <aside class="notes">
                         Pattern matching allows us to get away from the notion of service identity.
-                        Services that care for a message respond to it.  In an ideal world every service would see every message, 
+                        Services that care for a message respond to it.  In an ideal world every service would see every message,
                         but that is not practical in production.  In practice you need a peer-to-peer approach.
                     </aside>
-                </section>  
+                </section>
 
                 <section>
                     <h3>The SWIM algorithm</h3>
@@ -250,50 +252,50 @@
                     <ul>
                         <li>each service pings a random subset of services (different each time)</li>
                         <li>the pings establish health and disseminate membership information</li>
-                    </ul>                    
+                    </ul>
                     <aside class="notes">
-                        Cornell University. 
+                        Smart people have solved this problem. Cornell University.
                         Uber uses it for ~2000 services.
                         In other words it's magic!
                     </aside>
-                </section>  
+                </section>
                 <section>
                     <img src="img/microservices-component-infect.jpg" />
                     <aside class="notes">
-                        A joins network infects B, B then propagates this along and so on.  
+                        A joins network infects B, B then propagates this along and so on.
                         When you see it in practice, it feels like MAGIC!
                     </aside>
-                </section>                
-                
+                </section>
+
                 <section data-background="img/magic.gif">
                     <aside class="notes">
                         This MAGIC gives you some interesting options.
-                    </aside>                    
+                    </aside>
                 </section>
 
                 <section>
                     <h3>Scale</h3>
                     <img src="img/microservices-component-scale.jpg" />
                     <aside class="notes">
-                        Add another service, round robin them.
+                        Need more B? Add another service, round robin them.
                     </aside>
-                </section>  
-                
+                </section>
+
                 <section>
                     <h3>Deploy</h3>
                     <img src="img/microservices-component-deploy.jpg" />
                     <aside class="notes">
-                        Individual parts can be removed from a running system.
+                        Individual parts can be removed from a running system. Add new B, move load to B, remove A, go home at 4:30pm.
                     </aside>
-                </section>   
-                
+                </section>
+
                 <section>
                     <h3>Composabilty</h3>
                     <img src="img/microservices-component-compose.jpg" />
                     <aside class="notes">
-                        A thinks it's talking to B, but we've added C. Could be a caching layer or something functionality.
+                        Combine services by observing message and passing them on.  A thinks it's talking to B, but we've added C. Could be a caching layer or something functionality.
                     </aside>
-                </section>                 
+                </section>
 
                 <section data-background="img/dragon-scroll.jpg">
                     <h3>Secret Sauce?</h3>
@@ -301,15 +303,19 @@
                     <p><a style="font-size: 0.6em;" href="http://senecajs.org/">http://senecajs.org</a> | <a style="font-size: 0.6em;" href="https://github.com/senecajs/ramanujan">Twitter in 14 microservices</a></p>
                     <aside class="notes">
                         Provides both the pattern matching and transport independence.
-                    </aside>                    
+                    </aside>
                 </section>
                 <section data-background="img/demo.jpg">
                     <h2 style="background-color:rgba(0, 0, 0, 0.5);">Stop! Demo Time!</h2>
                     <p><a style="font-size: 0.6em;background-color:rgba(0, 0, 0, 0.5);" href="https://github.com/pootie/seneca-mesh-example">https://github.com/pootie/seneca-mesh-example</a></p>
+                    <aside class="notes">
+                        I can't take it anymore show me some me some magic!
+                    </aside>
                 </section>
 
                 <section data-background="img/questions.jpg">
                     <h2 style="background-color:rgba(0, 0, 0, 0.5);">Questions?</h2>
+                    <p><a style="font-size: 0.6em;background-color:rgba(0, 0, 0, 0.5);" href="https://github.com/pootie/presentations">this presentation (source)</a> | <a style="font-size: 0.6em;background-color:rgba(0, 0, 0, 0.5);" href="http://fabrik.kobold.com.au/presentations/_microservices.html">view here</a></p>
                 </section>
 			</div>
 		</div>
