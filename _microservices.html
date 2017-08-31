@@ -6,9 +6,10 @@
 
 		<title>node.js microservices</title>
 
-    <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/kobold-logo.css">
-		<link rel="stylesheet" href="css/theme/kobold-dark.css">
+        <link rel="stylesheet" href="css/theme/kobold-dark.css">
+        <link rel="stylesheet" href="css/emoji.css">
 
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -32,23 +33,31 @@
 			<div class="slides">
                 <section>
                     <h2>Node.js Microservices</h2>
-                    <p>Rad ideas and concepts (emoji)</p>
+                    <p><i class="em em-metal"></i>Rad ideas and concepts<i class="em em-metal"></i></p>
                     <aside class="notes">
                         why should we consider a microservice architecture?
                     </aside>
                 </section>
                 <section>
                     <h4>State of the Stack</h4>
-                    img of current stack
+                    <img src="img/microservices-current-stack.jpg" />
                 </section>
                 <section>
                     <h4>To infinity and beyond!</h4>
-                    img of future stack
+                    <img src="img/microservices-future.jpg" />
                 </section>       
                 <section>
                     <h4>Baby steps</h4>
-                    img of next stack
+                    <img src="img/microservices-next.jpg" />
                 </section>
+                <section>
+                    <h2>Ideas from...</h2>
+                    <img src="img/tao-microservices.jpg" width="30%" />
+                    <aside class="notes">
+                        The tao of microservices by Richard Rodger. 
+                        https://www.manning.com/books/the-tao-of-microservices
+                    </aside>
+                </section>                
 
                 <section>
                     <section>
@@ -82,7 +91,7 @@
                         <h3>Antifragile</h3>
                         <p>The human body</p>
                         <p>Cities and economies</p>
-                        <p>Ideas</p>
+                        <p>Ideas and movements</p>
                         <aside class="notes">
                             Something that grows stronger from volatility.  
                         </aside>
@@ -177,7 +186,7 @@
                 </section>
                 <section>
                     <h4>Super Coupling!</h4>
-                    <img src="img/microservices-component-call2.jpg" />
+                    <img src="img/classes.gif" />
                     <aside class="notes">
                         Show huge class heirarchy, generate from TW java?
                     </aside>
@@ -186,17 +195,16 @@
                     <h4>Un-Coupling?</h4>
                     <img src="img/microservices-component-call3.jpg" />
                     <aside class="notes">
-                        This is the promised land. Each microservice should believe it's the only one.
-                        A sends a message without knowing location of B, B recieves messages without knowledge of A.
-                        Now you have decoupling.  You can change A or B independent of each other. 
-                        How do we deal with service discovery?                       
+                        This is the promised land. Each microservice should believe it's the only one.                                               
                     </aside>
                 </section>
                 <section>
                     <h4>Decoupled!</h4>
-                    <img src="img/microservices-component-call3.jpg" />
+                    <img src="img/microservices-component-decouple.jpg" />
                     <aside class="notes">
-                       Show large micro-service map
+                        A sends a message without knowing location of B, B recieves messages without knowledge of A.
+                        Now you have decoupling.  You can change A or B independent of each other. 
+                        How do we deal with service discovery?
                     </aside>
                 </section>                  
                 <section>
@@ -240,10 +248,11 @@
                     <p>Designed for large scale (Uber)</p>
                     <p>Basic idea:</p>
                     <ul>
-                        <li>each service pangs a random subset of services (different each time)</li>
+                        <li>each service pings a random subset of services (different each time)</li>
                         <li>the pings establish health and disseminate membership information</li>
                     </ul>                    
                     <aside class="notes">
+                        Cornell University. 
                         Uber uses it for ~2000 services.
                         In other words it's magic!
                     </aside>
