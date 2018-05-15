@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/kobold-logo.css">
+		<link rel="stylesheet" href="css/theme/kobold-dark.css">
+
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+    <section id="kobold">
+      <a href="https://www.kobold.com.au/">KoBold</a>
+    </section>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>KoBold Systems</h3>
+					<aside class="notes">
+						Who we are, What we do, How we do it?
+					</aside>					
+				</section>
+
+				<section>
+					<h3>Team</h3>
+					<p>Chris Tran</p>
+					<p class="fragment">The developers</p>
+					<aside class="notes">
+						
+					</aside>					
+				</section>
+					
+				<section data-background="img/demo.jpg">
+					<h3>Capability</h3>
+					<p>Software</p>
+					<p class="fragment">Word cloud</p>
+					<aside class="notes">
+						Not just Microsoft .Net developers.						
+					</aside>					
+				</section>
+
+				<section data-background="img/demo.jpg">
+					<h3>Heroes</h3>
+					<p class="fragment">The developers</p>
+					<aside class="notes">
+						Not just Microsoft .Net developers.						
+					</aside>					
+				</section>
+
+                <section data-background="img/atlantis-cockpit.jpg">
+                    <p style="font-size: 9pt; position:absolute; right: 0; top:1680%;background-color:rgba(0, 0, 0, 0.7);">
+                        https://www.nasa.gov/mission_pages/shuttle/flyout/flyfeature_shuttlecomputers.html
+                    </p>
+                    <aside class="notes">
+                        Space Shuttle Atlantis. Flight software facts: 400k lines of code, 1 bug per release, $1000 per line of code.
+                        As close as humanity has come to perfect software. Implicit assumption that enterpise software needs to be this perfect.
+                        Processes. Fear. Unable to move fast.
+                    </aside>
+                </section>
+                <section data-background="img/gossamer_albatross.jpg">
+                    <p style="font-size: 9pt; position:absolute; right: 0;top:1680%;background-color:rgba(0, 0, 0, 0.7);">
+                        https://en.wikipedia.org/wiki/MacCready_Gossamer_Albatross
+                    </p>
+                    <aside class="notes">
+                        The Gossamer Albatross, a human-powered aircraft built by Dr. Paul B. MacCready's company AeroVironment.
+                        £100,000 prize offered in 1959 for flying under their own power across the English channel.
+                        In 1979 it completed a successful crossing.
+                        20 years. How? Problem wasn't crossing the channel, but not being able to iterate the design fast enough.
+                        Using aluminium piping and mix and match parts he could iterate faster.
+                        1 year to win prize after system was in place.
+                        Software development should be this empowering!
+                    </aside>
+                </section>
+                <section data-background="img/yak.jpg">
+                    <aside class="notes">
+                        This is a Hymilayan Yak.
+                        It represents old school Enterpise Software Development.
+                        You want to do something but you have to do all these other things that end up in having to shave a yak to get anything done.
+                        RFC > Change Board Approval > S&Q > Informal Test > Pre Prod Test > TRR > Formal Test > CIOG > Release Support > Shave Yak.
+                    </aside>
+                </section>
+                <section data-background="img/lego.jpg">
+                    <aside class="notes">
+                        This is what we want Enterpise software development to be like.
+                        Joyful. Ad for lego 1981.  We became software developers to feel this way.
+                    </aside>
+                </section>
+
+				<section data-background="img/lamp.jpg">
+					<h3>Agile</h3>
+                    <p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 1</span></p>
+                    <p class="fragment">idea 2</p>
+					<p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">Trust/span></p>
+					<aside class="notes">
+						How the agile manifesto came about.
+					</aside>
+                </section> 
+
+				<section data-background="img/dragon-scroll.jpg">
+					<h2>Secret Sauce?</h2>
+					<p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 1</span></p>
+					<p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 1</span></p>
+					<p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">Trust</span></p>
+				</section>
+				
+				<section>
+					<h2>Projects</h2>
+				</section>				
+
+                <section data-background="img/questions.jpg">
+                    <h2><span style="background-color:rgba(0, 0, 0, 0.7);">Questions?</span></h2>
+                    <a href="mailto:ctran@kobold.com.au">ctran@kobold.com.au</a>
+                </section>   				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/tagcloud/tagcloud.js' }
+				]
+			});
+		</script>
+	</body>
+</html>
