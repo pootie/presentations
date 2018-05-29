@@ -1,3 +1,4 @@
+/*  */
 .em {
   height: 1.5em;
   width: 1.5em;
@@ -7,6 +8,11 @@
   display: inline-block;
   vertical-align: middle
 }
+
+.em-astonished {
+  background-image: url("emoji/astonished.png")
+}
+
 
 .em---1 {
   background-image: url("emoji/+1.png")

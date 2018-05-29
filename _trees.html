@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Managing Hierarchical Data in Tables</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/kobold-logo.css">
+		<link rel="stylesheet" href="css/theme/kobold-dark.css">
+		<link rel="stylesheet" href="css/emoji.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+    <section id="kobold">
+      <a href="https://www.kobold.com.au/">KoBold</a>
+    </section>
+
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h3>Managing Hierarchical Data...</h3>
+					<p class="fragment">...in tables <i class="em em-astonished"></i></p>
+					<aside class="notes">						
+					</aside>					
+				</section>
+				<section>
+					Slide 2
+					<aside class="notes">
+						This slide has fragments which are also stepped through in the notes window.
+					</aside>
+				</section>
+
+                <section data-background="img/lamp.jpg">
+                    <p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 1</span></p>
+                    <p class="fragment">idea 2</p>
+                    <p class="fragment"><span style="background-color:rgba(0, 0, 0, 0.7);">idea 3</span></p>
+                </section> 
+                <section data-background="img/magic.gif">
+                    <h2>How does this happen?</h2>
+                </section>                
+                <section data-background="img/dragon-scroll.jpg">
+                    <h2>Secret Sauce?</h2>
+                </section>                
+                <section data-background="img/questions.jpg">
+                    <h2>Questions?</h2>
+                    <a href="https://wiki.kobold.com.au">http://wiki.kobold.com.au</a>
+                </section>   				
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        // Display controls in the bottom right corner
+        controls: true,
+
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					// Zoom in and out with Alt+click
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+                    { src: 'plugin/tagcloud/tagcloud.js' }
+				]
+			});
+		</script>
+	</body>
+</html>
